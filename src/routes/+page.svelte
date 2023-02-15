@@ -1,5 +1,5 @@
 <script lang="ts">
-	import '@fontsource/montserrat';
+	import '@fontsource/space-grotesk';
 	import MapBackground from '$lib/MapBackground.svelte';
 </script>
 
@@ -32,13 +32,17 @@
 	}
 
 	main {
-		font-family: Montserrat, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-			Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 		color: white;
 		text-align: right;
 		display: flex;
 		flex-direction: row;
 		justify-content: end;
+	}
+
+	main,
+	:global(.leaflet-container) {
+		font-family: 'Space Grotesk', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+			Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	}
 
 	main > div {

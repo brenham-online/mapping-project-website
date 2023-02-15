@@ -37,6 +37,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@fontsource/space-grotesk": "^4.5.13",
 		"leaflet": "^1.9.3",
 		"normalize.css": "^8.0.1"
 	}
