@@ -8,6 +8,7 @@ declare global {
 		interface Platform {
 			env: {
 				IMAGES_BUCKET: R2Bucket;
+				DATABASE: D1Database;
 			};
 		}
 	}
