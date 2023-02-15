@@ -1,8 +1,9 @@
 <script lang="ts">
 	import 'leaflet/dist/leaflet.css';
-	import L from 'leaflet';
+	import type { Map } from 'leaflet';
 
-	function createMap(container: HTMLDivElement) {
+	async function createMap(container: HTMLDivElement) {
+		const L = await import('leaflet');
 		let m = new L.Map(container, { preferCanvas: true })
 			.setView([30.1658, -96.3983], 14)
 			.setMaxBounds([
@@ -18,21 +19,21 @@
 		return m;
 	}
 
-	let map: L.Map | null = null;
+	let map: Promise<Map> | null = null;
 
 	function mapAction(container: HTMLDivElement) {
 		map = createMap(container);
 
 		return {
 			destroy: () => {
-				map?.remove();
+				map?.then((m) => m.remove());
 				map = null;
 			}
 		};
 	}
 
 	function resizeMap() {
-		map?.invalidateSize();
+		map?.then((m) => m.invalidateSize());
 	}
 </script>
 
