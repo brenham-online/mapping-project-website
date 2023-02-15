@@ -23,6 +23,11 @@
 		<p>
 			Displayed here is a map of Brenham rendered by OpenStreetMap, with all of our contributions.
 		</p>
+		<p>
+			This map data is used in many products you use all the time: Apple Maps, Facebook, Bing Maps,
+			Wikipedia, Pinterest, Snapchat, Uber, Garmin, and many more! Just because you don't use
+			OpenStreetMap directly doesn't mean you don't benefit from the Brenham Mapping Project's work.
+		</p>
 	</div>
 </main>
 
