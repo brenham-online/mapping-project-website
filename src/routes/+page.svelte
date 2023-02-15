@@ -3,6 +3,10 @@
 	import MapBackground from '$lib/MapBackground.svelte';
 </script>
 
+<svelte:head>
+	<title>Brenham Mapping Project</title>
+</svelte:head>
+
 <MapBackground />
 
 <main>
